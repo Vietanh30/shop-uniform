@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  font-family: "Readex Pro", serif;
+  font-weight: normal;
+}
+
+.f-s-10 {
+  font-size: 10px;
+}
+
+.f-s-12 {
+  font-size: 12px;
+}
+
+.f-s-14 {
+  font-size: 14px;
+}
+
+.f-s-16 {
+  font-size: 16px;
+}
+
+.f-s-18 {
+  font-size: 18px;
+}
+
+.f-s-20 {
+  font-size: 20px;
+}
+
+.f-s-22 {
+  font-size: 22px;
+}
+
+.f-s-24 {
+  font-size: 24px;
+}
+
+.f-s-28 {
+  font-size: 28px;
+}
+.f-s-30 {
+  font-size: 30px;
+}
+.f-s-32 {
+  font-size: 32px;
+}
+.f-s-40 {
+  font-size: 40px;
+}
+.f-s-48 {
+  font-size: 48px;
+}
+.detail-product {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  color: #fff; /* Thiết lập màu chữ trắng */
+}
+
+.detail-product:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.detail-product:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ trong suốt */
+  z-index: -1; /* Đặt lớp phủ ở phía sau nội dung */
+  transition: opacity 0.5s ease;
+  color: #fff !important;
+}
+
+.detail-product:hover {
+  background-color: #ff0000;
+  color: #fff !important;
+}
+
+.detail-product:hover:before {
+  left: 0;
+}
+
+.detail-product:hover:after {
+  opacity: 0; /* Ẩn lớp phủ khi hover */
+}
+.pagination .page-link {
+  color: #ed3126;
+  border: 2px solid #ed3126;
+}
+
+.pagination .page-link:hover,
+.pagination .page-link.active {
+  background-color: #ed3126;
+  color: #fff;
+}
+.social-icons {
+  position: fixed;
+  bottom: 5%;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff; /* Màu chữ mặc định */
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px; /* Để tạo khoảng cách */
+  border-radius: 5px; /* Bo góc cho nút */
+}
+
+.facebook {
+  background-color: #3b5998; /* Màu nền Facebook */
+}
+
+.facebook:hover {
+  background-color: #2d4373; /* Màu nền hover Facebook */
+}
+
+.twitter {
+  background-color: #1da1f2; /* Màu nền Twitter */
+}
+
+.twitter:hover {
+  background-color: #1a91da; /* Màu nền hover Twitter */
+}
+
+.instagram {
+  background-color: #e1306c; /* Màu nền Instagram */
+}
+
+.instagram:hover {
+  background-color: #c13584; /* Màu nền hover Instagram */
+}
